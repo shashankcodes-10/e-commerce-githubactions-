@@ -5,8 +5,8 @@ name: "Hello Workflow"
 
 #when the workflow runs
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
+    
  # what the workflow does 
 jobs:
   greet:                      # name of the job
