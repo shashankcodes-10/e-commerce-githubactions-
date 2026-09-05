@@ -1,0 +1,16 @@
+# Goal - say hello in the workflow and tell the repo name
+
+# workflow name
+name: "Hello Workflow"
+
+#when the workflow runs
+on:
+  push:
+    branches: [main]
+ # what the workflow does 
+jobs:
+  greet:                      # name of the job
+    runs-on: ubuntu-latest    # where the job runs [os]
+    steps:                    # the sequence of steps the job does
+      - name: say hello
+        run: echo "hello github-actions"
